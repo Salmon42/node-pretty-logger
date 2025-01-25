@@ -1,6 +1,6 @@
 {
   "name": "node-pretty-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
 	"license": "MIT",
   "description": "A minimal Node.js terminal console.log extension library with formatting for better readability",
 	"repository": {
@@ -29,6 +29,7 @@
     "test": "vitest"
   },
   "type": "module",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "@stylistic/eslint-plugin": "1.7.0",
