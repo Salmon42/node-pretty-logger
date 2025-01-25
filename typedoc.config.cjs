@@ -7,7 +7,7 @@
 /** @type {import('typedoc').TypeDocOptions} */
 module.exports = {
 	name: 'Node Pretty Logger',
-	entryPoints: ['lib/main.ts'],
+	entryPoints: ['lib/__doc.ts'],
 	includeVersion: true,
 	readme: 'tmp/doc-readme.md',
 	cacheBust: true,

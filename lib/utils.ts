@@ -7,9 +7,10 @@ import { C, N } from './constants'
 
 
 /**
+ * @category Internals
  * @returns stringified timestamp in format HH:MM:SS.fff
  */
-const getLogTimestamp = () => {
+export const getLogTimestamp = () => {
 	const d = new Date()
 	return `${d.toTimeString().split(' ')[0]}.${d.getMilliseconds().toString()}`
 }
@@ -17,6 +18,7 @@ const getLogTimestamp = () => {
 
 /**
  * Return constructed string containing tag, severity indicator and timestamp depending on configuration
+ * @category Internals
  *
  * @param severityColor - constant string of escape character indicating terminal text color change
  * @param tag - the semi-unique label

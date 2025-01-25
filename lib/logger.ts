@@ -9,6 +9,7 @@ import { logTemplate } from './utils'
 
 /**
  * https://davidlozzi.com/2021/03/16/style-up-your-console-logs/
+ * @category Library
  *
  * @param tag - Label for the logs
  * @returns colored & styled command prompt / terminal logs
