@@ -1,6 +1,6 @@
 import { copyFileSync, existsSync } from 'node:fs'
 import { sep } from 'node:path'
-import { useLogger } from './utils/logger'
+import { useLogger } from '@/main'
 import packageJson from '../package.json'
 
 

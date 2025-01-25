@@ -1,4 +1,4 @@
-import { useLogger } from './utils/logger'
+import { useLogger } from '@/main'
 import { rmrf } from './utils/remover'
 
 const { info, success, error } = useLogger('Cleaner')
