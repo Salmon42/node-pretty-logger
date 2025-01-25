@@ -1,14 +1,24 @@
 {
   "name": "node-pretty-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
 	"license": "MIT",
-  "private": true,
   "description": "A minimal Node.js terminal console.log extension library with formatting for better readability",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Salmon42/node-pretty-logger.git"
+	},
   "author": {
     "name": "Andrej Hučko",
     "email": "hucko.dev@gmail.com",
     "url": "https://github.com/Salmon42"
   },
+	"keywords": [
+		"node console logger",
+		"logger",
+		"pretty-print",
+		"formatter",
+		"typescript"
+	],
   "scripts": {
     "build": "tsc && vite build",
     "clean": "tsx --tsconfig scripts/tsconfig.json scripts/clean.ts",
