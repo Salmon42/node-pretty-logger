@@ -1,6 +1,5 @@
 import { copyFileSync, existsSync } from 'node:fs'
 import { sep } from 'node:path'
-import { execSync } from 'child_process'
 import { useLogger } from './utils/logger'
 import packageJson from '../package.json'
 
@@ -35,15 +34,15 @@ if (!existsSync(`${cwd}/dist`)) {
 copyFile('package.json')
 copyFile('README.md')
 copyFile('CHANGELOG.md', 'readme')
-info('Prepublish done.')
+success('Prepublish done. You can now run \'npm publish\' command in /dist directory.')
 
-process.chdir('dist')
+// process.chdir('dist')
 
-try {
-	execSync('npm publish', { stdio: ['ignore', 'inherit', 'inherit'] })
-	success('Publish complete.')
-}
-catch (e) {
-	error(e)
-	process.exit(1)
-}
+// try {
+// execSync('npm publish', { stdio: ['ignore', 'inherit', 'inherit'] })
+// success('Publish complete.')
+// }
+// catch (e) {
+// error(e)
+// process.exit(1)
+// }
