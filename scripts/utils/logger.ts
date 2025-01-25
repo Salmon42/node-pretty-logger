@@ -1,5 +1,5 @@
 //
-// Terminal logger implementation
+// Terminal logger implementation (internal)
 //
 
 
