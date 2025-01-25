@@ -11,21 +11,24 @@ The main exported function `useLogger` has one parameter `tag`. Instantiating th
 
 
 ```ts
+const { info, success, warn, error } = useLogger('MainSrc')
+const { info: ofInfo } = useLogger('OtherFunc')
+
 const someData = {
 	attr1: 10,
 	attr2: 'Hi',
 }
 
-const { info, success, warn, error } = useLogger('TestLog')
+info('info')
+success('success')
+warn('warn')
+error('error')
 
-info('info', someData)
-success('success', someData)
-warn('warn', someData)
-error('error', someData)
+setLoggerConfig({ showTimeStamp: false })
+info('Test', someData)
 
-// You can name the function differently if the logger functions would clash
-const { info: dfInfo } = useLogger('DifferentFunctionality')
-
+setLoggerConfig({ showTimeStamp: true })
+ofInfo('Test', someData)
 ```
 
 **Outputs**:

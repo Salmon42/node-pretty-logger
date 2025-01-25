@@ -1,5 +1,5 @@
 //
-// ...
+// Logger utilities
 //
 
 import { LoggerConfigObject } from './config'
@@ -7,22 +7,20 @@ import { C, N } from './constants'
 
 
 /**
- * Returns
- *
- * @returns
+ * @returns stringified timestamp in format HH:MM:SS.fff
  */
-export const getLogTimestamp = () => {
+const getLogTimestamp = () => {
 	const d = new Date()
 	return `${d.toTimeString().split(' ')[0]}.${d.getMilliseconds().toString()}`
 }
 
 
 /**
- * ...
+ * Return constructed string containing tag, severity indicator and timestamp depending on configuration
  *
- * @param severityColor - ...
- * @param tag - ...
- * @returns ...
+ * @param severityColor - constant string of escape character indicating terminal text color change
+ * @param tag - the semi-unique label
+ * @returns string used in logger function
  */
 export const logTemplate = (severityColor: string, tag: string) => {
 	return LoggerConfigObject.showTimeStamp
