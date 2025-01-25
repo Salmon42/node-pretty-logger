@@ -1,6 +1,6 @@
 {
   "name": "node-pretty-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
 	"license": "MIT",
   "description": "A minimal Node.js terminal console.log extension library with formatting for better readability",
 	"repository": {
@@ -21,10 +21,10 @@
 	],
   "scripts": {
     "build": "tsc && vite build",
-    "clean": "tsx --tsconfig scripts/tsconfig.json scripts/clean.ts",
+    "clean": "tsx scripts/clean.ts",
     "dev": "tsx src/main.ts",
-    "deploy": "tsx --tsconfig scripts/tsconfig.json scripts/deploy.ts",
-    "doc": "tsx --tsconfig scripts/tsconfig.json scripts/doc.ts",
+    "deploy": "tsx scripts/deploy.ts",
+    "doc": "tsx scripts/doc.ts",
     "lint": "eslint .",
     "test": "vitest"
   },
