@@ -1,9 +1,9 @@
 {
-  "name": "ts-lib-template",
+  "name": "node-pretty-logger",
   "version": "1.0.0",
 	"license": "MIT",
   "private": true,
-  "description": "Opinionated template for quickstart development of TypeScript/Vite library for SPA's or other Node projects",
+  "description": "A minimal Node.js terminal console.log extension library with formatting for better readability",
   "author": {
     "name": "Andrej Hučko",
     "email": "hucko.dev@gmail.com",
