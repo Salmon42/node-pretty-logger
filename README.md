@@ -3,6 +3,8 @@
 
 A minimal Node.js terminal console.log extension library with formatting for better readability.
 
+Implementation documentation can be found on https://salmon42.github.io/node-pretty-logger.
+
 ---
 
 
