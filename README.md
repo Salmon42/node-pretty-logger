@@ -7,6 +7,13 @@ Implementation documentation can be found on https://salmon42.github.io/node-pre
 
 ---
 
+## Installation
+You can install this package from NPM registry https://www.npmjs.com/package/node-pretty-logger.
+
+```bash
+npm install node-pretty-logger
+```
+
 
 ## Usage
 The main exported function `useLogger` has one parameter `tag`. Instantiating the encapsulated log functions will ensure that the console log will always mention in what context it is being run in - useful if using multiple loggers across modules.
