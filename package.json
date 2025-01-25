@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "clean": "tsx --tsconfig scripts/tsconfig.json scripts/clean.ts",
-    "dev": "vite",
+    "dev": "tsx src/main.ts",
     "deploy": "tsx --tsconfig scripts/tsconfig.json scripts/deploy.ts",
     "doc": "tsx --tsconfig scripts/tsconfig.json scripts/doc.ts",
     "lint": "eslint .",

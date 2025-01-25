@@ -1,9 +1,4 @@
-import { calculation } from '@/implementation'
-import { debug } from '#/func'
+import { Dummy } from '@/main'
 
 console.info('Hello src!')
-
-debug({
-	test: 'value',
-	calculated: calculation(10, 10, '*'),
-})
+Dummy()

@@ -29,11 +29,12 @@ const { info: dfInfo } = useLogger('DifferentFunctionality')
 ```
 
 **Outputs**:
+
 ![](./readme/use-logger-output.jpg)
 
 
 ## License
-This repository is released under [MIT license](https://opensource.org/license/MIT), which means that you can reuse any part of code here for your convenience.
+This library is released under [MIT license](https://opensource.org/license/MIT), which means that you can reuse any part of code here for your convenience.
 
 Copyright (C) 2025-present, Andrej Hučko
 
