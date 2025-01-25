@@ -5,7 +5,7 @@
 
 /**
  * Exported type alias for all console.log methods
- * @category Internals
+ * @category Library
  */
 // eslint-disable-next-line no-unused-vars
 export type LoggerFunction = (...args: any[]) => void
@@ -13,7 +13,7 @@ export type LoggerFunction = (...args: any[]) => void
 
 /**
  * Exported alias for logger configuration
- * @category Internals
+ * @category Library
  */
 export type LoggerConfig = {
 	showTimeStamp: boolean
