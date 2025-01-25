@@ -6,20 +6,15 @@
 
 /** @type {import('typedoc').TypeDocOptions} */
 module.exports = {
-	name: 'Testing Documentation Name',
+	name: 'Node Pretty Logger',
 	entryPoints: ['lib/main.ts'],
 	includeVersion: true,
 	readme: 'tmp/doc-readme.md',
 	cacheBust: true,
 
 	navigationLinks: {
-		'Example': 'https://google.com'
+		'GitHub': 'https://github.com/Salmon42/node-pretty-logger'
 	},
-
-	sidebarLinks: {
-		'Example': 'https://google.com'
-	},
-
 
 	plugin: [
 		'typedoc-plugin-coverage', 				// https://www.npmjs.com/package/typedoc-plugin-coverage
@@ -55,16 +50,3 @@ module.exports = {
 	footerTypedocVersion: true,
 	footerLastModified: true,
 }
-
-// {
-// 	"entryPoints": [
-// 		"lib/main.ts"
-// 	],
-// 	"out": "docs",
-
-// 	"plugin": [
-// 		{
-
-// 		}
-// 	],
-// }

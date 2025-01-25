@@ -24,7 +24,7 @@ const N = '\x1b[0m'
 
 const getLogTimestamp = () => {
 	const d = new Date()
-	return `${d.toTimeString().split(' ')[0]}${d.getMilliseconds()}`
+	return `${d.toTimeString().split(' ')[0]}.${d.getMilliseconds()}`
 }
 
 

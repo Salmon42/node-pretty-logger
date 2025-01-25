@@ -1,4 +1,15 @@
-import { Dummy } from '@/main'
+import { setLoggerConfig, useLogger } from '@/main'
 
-console.info('Hello src!')
-Dummy()
+const { info, success, warn, error } = useLogger('MainSrc')
+const { info: ofInfo } = useLogger('OtherFunc')
+
+info('info')
+success('success')
+warn('warn')
+error('error')
+
+setLoggerConfig({ showTimeStamp: false })
+info('Test')
+
+setLoggerConfig({ showTimeStamp: true })
+ofInfo('Test')

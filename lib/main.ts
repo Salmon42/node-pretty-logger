@@ -1,4 +1,6 @@
-/** Doc */
-export const Dummy = () => {
-	console.info('Dummy')
-}
+//
+// Exported code
+//
+
+export { useLogger } from './logger'
+export { setLoggerConfig } from './config'
