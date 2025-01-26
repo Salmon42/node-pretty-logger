@@ -1,8 +1,9 @@
 {
   "name": "node-pretty-logger",
-  "version": "1.0.3",
+  "version": "1.0.5",
 	"license": "MIT",
   "description": "A minimal Node.js terminal console.log extension library with formatting for better readability",
+	"homepage": "https://salmon42.github.io/node-pretty-logger",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Salmon42/node-pretty-logger.git"
